@@ -1,0 +1,13 @@
+<div>
+    {% for jobs in jobs %}
+        <div class="lead border-bottom row" style="padding-bottom: 8px;">
+            <div class="col-11">
+                <h4 style="color: rgb(120, 120, 120); font-family: 'Times New Roman', Times, serif; margin-top: 15px; margin-bottom: 1px;">{{jobs['title']}}</h4>
+                {{jobs['location']}}
+            </div> 
+            <div class="col-1">
+                <button type="button" class="btn btn-outline-primary mt-4">Apply</button>
+            </div>
+        </div>
+    {% endfor %}
+</div>
