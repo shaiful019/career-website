@@ -7,18 +7,27 @@
     </head>
     <body>
         {% include 'nav.html' %}
+        <h1 class="text-center mt-4 mb-4">Visionique Careers</h1>
+        <img class="img-fluid" src="static\banner.jpg">
+        
         <div class="container">
-            <h1 class="text-center mt-4 mb-4">Visionique Careers</h1>
-            <img class="img-fluid" src="static\banner.jpg">
+            
             <h2 class="text-center mt-4 mb-4">About Visionique</h2>
-            <p class="lead text-justify">Visionique is at the forefront of computer vision technology, leveraging advanced algorithms 
-                and state-of-the-art solutions to transform digital imagery into actionable insights. 
-                Our team of experts is dedicated to pushing the boundaries of what's possible, creating 
-                innovative tools that enable businesses and organizations to harness the power of visual data 
-                analysis. With a commitment to excellence and a passion for discovery, Visionique is driving 
-                the future of intelligent visual processing, making it an integral part of the digital 
-                transformation journey.
-            </p>
+            <div class="row" style="margin-bottom: 10px;">
+                <div class="col-md-8">
+                    <p class="lead text-justify">Visionique is at the forefront of computer vision technology, leveraging advanced algorithms 
+                        and state-of-the-art solutions to transform digital imagery into actionable insights. 
+                        Our team of experts is dedicated to pushing the boundaries of what's possible, creating 
+                        innovative tools that enable businesses and organizations to harness the power of visual data 
+                        analysis. With a commitment to excellence and a passion for discovery, Visionique is driving 
+                        the future of intelligent visual processing, making it an integral part of the digital 
+                        transformation journey.
+                    </p>
+                </div>
+                <div class="d-none d-md-block col-md-4">
+                    <img class="img-fluid" style="border-radius: 16px; height: 250px;" src="static\swe_working.jpg" alt="Software Engineers Working">
+                </div>
+            </div>
             <h2 class="text-center mt-4 mb-4">Open positions</h2>
             {% include 'job_item.html' %}
             <div class="text-center mt-4">
